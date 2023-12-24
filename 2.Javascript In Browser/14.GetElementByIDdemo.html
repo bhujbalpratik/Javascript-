@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Element By ID Demo</title>
+</head>
+
+<body>
+    <input type="number" name="" id="num1">
+
+    <input type="number" name="" id="num2">
+
+    <button onclick="add();">Add</button>
+    <button onclick="sub();">Sub</button>
+    <button onclick="mul();">Mul</button>
+    <button onclick="divide();">Div</button>
+    <button onclick="Modulasdiv();">Mod Div</button>
+    <br>
+    <span id="result">0</span>
+
+    <script>
+        const add = () => {
+
+            let num1 = +(document.getElementById('num1').value);
+
+            let num2 = +(document.getElementById('num2').value);
+
+            let sum = num1 + num2;
+
+            document.getElementById('result').innerHTML = "Addition is : " + sum;
+
+        }
+
+        const sub = () => {
+
+            let num1 = +(document.getElementById('num1').value);
+
+            let num2 = +(document.getElementById('num2').value);
+
+            let sub = num1 - num2;
+
+            document.getElementById('result').innerHTML = "Subtraction is : " + sub;
+
+        }
+
+        const mul = () => {
+
+            let num1 = +(document.getElementById('num1').value);
+
+            let num2 = +(document.getElementById('num2').value);
+
+            let mul = num1 * num2;
+
+            document.getElementById('result').innerHTML = "Multiplication is : " + mul;
+
+        }
+
+        const divide = () => {
+
+            let num1 = +(document.getElementById('num1').value);
+
+            let num2 = +(document.getElementById('num2').value);
+
+            let div = num1 / num2;
+
+            document.getElementById('result').innerHTML = "Division is : " + div;
+
+        }
+
+        const Modulasdiv = () => {
+
+            let num1 = +(document.getElementById('num1').value);
+
+            let num2 = +(document.getElementById('num2').value);
+
+            let mdiv = num1 % num2;
+
+            document.getElementById('result').innerHTML = "Modulas Division is : " + mdiv;
+
+        }
+    </script>
+
+</body>
+
+</html>

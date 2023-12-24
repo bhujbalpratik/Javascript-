@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Element By ID</title>
+</head>
+
+<body>
+    <input type="text" name="" id="inp">
+    <button onclick="fetch();">Fetch</button>
+    <div id="print">0</div>
+    <script>
+        const fetch = () => {
+            var n = document.getElementById('inp').value;
+            document.getElementById('print').innerHTML = n;
+        }
+    </script>
+</body>
+
+</html>

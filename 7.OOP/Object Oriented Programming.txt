@@ -1,0 +1,39 @@
+
+    1) Class And Object 
+    2) Abstraction 
+    3) Encapsulation 
+    4) Inheritance 
+    5) Polymorphism
+
+
+    1) Class And Object 
+
+        Class
+            --> Class is logical representation of memory.
+                Class is collection of member variables and member functions.
+
+        Objects 
+            --> Objects are physical representation of memory.
+                Memory allocation is possible by objects.
+
+
+    2) Abstraction
+        --> Abstraction is a fundamental concept in object-oriented programming (OOP) that refers to the practice of hiding the implementation details of an object and exposing only the essential features to the user. In JavaScript, abstraction is achieved by using abstract classes and interfaces.
+
+
+    3) Encapsulation
+        -->Encapsulation is the concept of building data (properties) and methods (functions) together with in an object, allowing the object control access to its internal data and behavior. This helps to hide implementation details and expose only necessary interfaces to intereact with the objects in JavaScript, you can achieve Encapsulation by using closures symbols or naming conventions to simulate private members and expose public interfaces.
+
+    	
+    4) Inheritance 
+        --> Inheritance allows a class (subclass) to inherit properties and methods from another class (superclass). This enables code reuse and the creation of hierarchical relationship between classes. In JavaScript inheritance achieved through prototype-based inheritance (before ES6) or using ES6 classes with the extends keyword.
+
+
+    5) Polymorphism
+        --> Polymorphism allows objects to be treated as instances of their parent class,
+        even if they are instances of a subclass. This facilitates writing code that works with diffrent types of objects in genric way. In JavaScript, polymorphism is acheived through 
+        method overriding, where a subclass provides its own implementation of a method that is already defined in the parent class. The code can then use the same method to work with both parent and subclass instances.
+
+        
+
+	

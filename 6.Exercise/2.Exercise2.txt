@@ -1,0 +1,8 @@
+
+
+
+Exercise 2  : Snake Water Gun 
+
+Use Javascript to create a Game of Snake Water & Gun. The game should ask you to enter -Snake , Water & Gun.
+The Computer should be able to randomly genrate Snake , Water & Gun. and Declare Win Or Loss Using Alert 
+Use Confirm or prompt whenever required.

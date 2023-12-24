@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Machine</title>
+</head>
+
+<body>
+    Enter Your Amount : <input type="text" name="" id="Amt"><br><br>
+    <!-- 10% Discount Pay Amount : <input type="text" name="" id="Pay_Amt"> -->
+    Select Your Gender : <input type="radio" name="gender" id="ml" onclick="getAmt();">Male
+    <input type="radio" name="gender" id="fl" onclick="getAmt();">Female <br> <br>
+    Total Pay Amount : <input type=" text" name="" id="Pay_Amt">
+
+    <script>
+        const getAmt = () => {
+            var Amt = Number.parseInt(document.getElementById('Amt').value);
+
+            var ML = document.getElementById('ml');
+
+            var FL = document.getElementById('fl');
+
+            if (ML.checked == true) {
+                var dis = Number.parseInt((Amt / 100) * 10);
+            }
+            else {
+                var dis = Number.parseInt((Amt / 100) * 20);
+            }
+
+            document.getElementById('Pay_Amt').value = Amt - dis;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#bgimg {
+    background-image: url(assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 600px;
+    padding: 0;
+}
+
+#bgrgba {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 80%;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background-color: rgba(126, 109, 66, 0.5);
+    /* border-radius: 50%; */
+    border: 2px solid goldenrod;
+    position: relative;
+}
+
+img {
+    position: absolute;
+}
+
+.card {
+    background: transparent;
+}
+
+.text-white {
+    font-family: 'Lobster', cursive;
+}

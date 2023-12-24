@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Object Model</title>
+</head>
+
+<body>
+    <button onclick="gotofacebook();">Facebook</button>
+    <button onclick="gotogoogle();">Google</button>
+    <button onclick="alert(window.location.url);">URL</button>
+    <button onclick="alert(window.location.pathname);">Path</button>
+    <button onclick="alert(window.location.hostname);">Host</button>
+
+
+    <script>
+        const gotofacebook = () => {
+            window.location.assign("https://www.facebook.com");
+        }
+        const gotogoogle = () => {
+            window.location.href = "https://www.google.com";
+        }
+    </script>
+</body>
+
+</html>

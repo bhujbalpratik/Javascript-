@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Box</title>
+    <style>
+        #box1 {
+            height: 250px;
+            width: 250px;
+            background-color: red;
+            float: left;
+            display: none;
+        }
+
+        #box2 {
+            height: 250px;
+            width: 250px;
+            background-color: blue;
+            float: left;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button onclick="showbox(box1,box2,btn1,btn2);" id="btn1">Show Box 1</button>
+    <button onclick="showbox(box2,box1,btn2,btn1);" id="btn2">Show Box 2</button>
+    <br><br>
+    <div id="box1">The Box 1</div>
+    <div id="box2">The Box 2</div>
+
+    <script>
+        const showbox = (elmt1, elmt2, btn1, btn2) => {
+            elmt1.style.display = "block";
+
+            elmt2.style.display = "none";
+
+            btn1.style.backgroundColor = "white"
+
+            btn2.style.backgroundColor = "gray"
+        }
+    </script>
+
+</body>
+
+</html>

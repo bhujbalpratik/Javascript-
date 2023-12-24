@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject Demo</title>
+</head>
+
+<body>
+    <input type="checkbox" name="subject" id="" value="C Programming" onclick="checkform();">C Programming <br>
+    <input type="checkbox" name="subject" id="" value="Fundamentals" onclick="checkform();">Fundamentals <br>
+    <input type="checkbox" name="subject" id="" value="Operating System" onclick="checkform();">Operating System <br>
+    <input type="checkbox" name="subject" id="" value="Basic English" onclick="checkform();">Basic English <br>
+    <input type="checkbox" name="subject" id="" value="Mathmatics" onclick="checkform();">Mathmatics <br>
+    <input type="checkbox" name="subject" id="" value="Communication Skills" onclick="checkform();">Communication Skills
+    <br>
+    <input type="checkbox" name="subject" id="" value="C++ Programming" onclick="checkform();">C++ Programming <br>
+    <input type="checkbox" name="subject" id="" value="Data Structures" onclick="checkform();">Data Structures <br>
+    <br>
+    <div id="box"></div>
+
+
+    <script>
+
+        const checkform = () => {
+            var sub = document.getElementsByName('subject');
+            var count = 0;
+            for (let i = 0; i < sub.length; i++) {
+                if (sub[i].checked == true) {
+                    count++;
+                }
+                if (count == 5) {
+                    document.getElementById('box').innerHTML = "<button>Submit</button>";
+                }
+                else {
+                    document.getElementById('box').innerHTML = "";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

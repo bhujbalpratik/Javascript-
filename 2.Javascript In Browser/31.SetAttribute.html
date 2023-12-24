@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Attribute</title>
+    <style>
+        .container {
+            height: 300px;
+            width: 350px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://static.vecteezy.com/system/resources/previews/022/448/291/non_2x/save-earth-day-poster-environment-day-nature-green-ai-generative-glossy-background-images-tree-and-water-free-photo.jpg"
+            alt="Image Not found" height="100%" width="100%" id="image">
+    </div>
+    <br>
+    <button onclick="change(image);">Change Image</button>
+
+    <script>
+        const change = (img) => {
+            img.setAttribute("src", "https://static.vecteezy.com/system/resources/thumbnails/022/695/264/small/generative-ai-illustration-of-green-enterprises-that-rely-on-renewable-energy-can-reduce-climate-change-and-global-warming-without-any-emissions-of-carbon-dioxide-a-clean-environment-photo.jpg");
+        }
+    </script>
+</body>
+
+</html>

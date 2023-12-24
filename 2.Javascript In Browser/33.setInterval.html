@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval</title>
+</head>
+
+<body>
+    <div id="box">
+        0
+    </div>
+
+    <script>
+        var i = 0;
+        var stopinterval = setInterval(function () {
+            document.getElementById("box").innerHTML = i;
+            i++;
+            if (i == 101) {
+                clearInterval(stopinterval);
+            }
+        }, 60);
+    </script>
+</body>
+
+</html>

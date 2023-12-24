@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Walking with DOM</title>
+  </head>
+  <body>
+    <!-- 
+        DOM Tree Refer to the HTML page where all the nodes are objects there can be 3 main types of nodes in the DOM tree 
+                -text nodes
+                -element nodes
+                -comment nodes  
+
+     -->
+
+    <div class="ParentDIV">
+      <div class="childDIV1"></div>
+      <!-- 
+                    ChildDIV1 and childDIV2 is siblings of each other  -->
+      <div class="childDIV2"></div>
+    </div>
+
+    <script>
+      console.log(document.body.firstChild);
+      console.log(document.body.lastChild);
+      let ary = Array.from(document.body.childNodes);
+      console.log(ary);
+    </script>
+
+    <div class="box"></div>
+  </body>
+</html>

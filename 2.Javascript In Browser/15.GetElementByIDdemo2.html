@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Get Elemnt By ID Demo 2</title>
+</head>
+
+<body>
+
+    <input type="text" name="" id="inp1" onkeyup="fetch1();">
+
+    <input type="text" name="" id="inp2" onkeyup="fetch2();">
+
+    <script>
+        const fetch1 = () => {
+            let n = document.getElementById('inp1').value;
+            document.getElementById('inp2').value = n;
+        }
+        const fetch2 = () => {
+            let n2 = document.getElementById('inp2').value;
+            document.getElementById('inp1').value = n2;
+        }
+    </script>
+
+</body>
+
+</html>

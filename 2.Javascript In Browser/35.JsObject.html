@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Object</title>
+</head>
+
+<body>
+    <button onclick="info(pb)">Show Details</button>
+    <br>
+    <h1 id="pb">Information</h1>
+
+    <script>
+        const student = {
+            name: "Pratik Balasaheb Bhujbal",
+            reg_No: 1093,
+            gen: "Male",
+            email: "pb@gmail.com",
+            cont: 8308021288,
+            sub: ["Cpp", "DSA", "Web Dev"]
+        }
+
+        const info = (x) => {
+            x.innerHTML = "Student Name : " + student.name + "<br>" + "Student Reg No : " + student.reg_No + "<br>" + "Student Gender : " + student.gen + "<br>" + "Student Email : " + student.email + "<br>" + "Student Cont : " + student.cont + "<br>" + "Student Subjects : " + student.sub + "<br>"
+        }
+
+    </script>
+</body>
+
+</html>

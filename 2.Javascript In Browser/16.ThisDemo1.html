@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Demo1 </title>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td><input type="text" name="" id="inp1" onkeyup="copy(this,inp2);"></td>
+            <td><input type="text" name="" id="inp2"></td>
+        </tr>
+
+        <tr>
+            <td><input type="text" name="" id="inp3" onkeyup="copy(this,inp4);"></td>
+            <td><input type="text" name="" id="inp4"></td>
+        </tr>
+
+        <tr>
+            <td><input type="text" name="" id="inp5" onkeyup="copy(this,inp6);"></td>
+            <td><input type="text" name="" id="inp6"></td>
+        </tr>
+    </table>
+
+    <script>
+        const copy = (x, y) => {
+            y.value = x.value;
+        }
+    </script>
+</body>
+
+</html>

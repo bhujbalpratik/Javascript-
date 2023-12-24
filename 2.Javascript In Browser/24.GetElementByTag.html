@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Element By Tag Name</title>
+</head>
+
+<body>
+    <input type="text" name="" id=""><br>
+    <input type="text" name="" id=""><br>
+    <input type="text" name="" id=""><br>
+    <br>
+    <button onclick="fetch();">Click</button>
+
+    <script>
+        const fetch = () => {
+            var inp = document.getElementsByTagName('input');
+            for (let i = 0; i < inp.length; i++) {
+                alert(inp[i].value);
+            }
+        }
+    </script>
+</body>
+
+</html>

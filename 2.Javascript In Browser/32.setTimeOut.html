@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeOut</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #box {
+            height: 10px;
+            width: 10px;
+            background-color: black;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        for (let i = 0; i <= 100000; i++) {
+            document.write("<div id='box' onmouseover='change(this);'></div>");
+        }
+        const change = (x) => {
+            x.style.backgroundColor = "yellow";
+            setTimeout(function () {
+                x.style.backgroundColor = "lime";
+            }, 1000)
+            setTimeout(function () {
+                x.style.backgroundColor = "green";
+            }, 2000)
+            setTimeout(function () {
+                x.style.backgroundColor = "orange";
+            }, 3000)
+            setTimeout(function () {
+                x.style.backgroundColor = "red";
+            }, 4000)
+            setTimeout(function () {
+                x.style.backgroundColor = "pink";
+            }, 5000)
+            setTimeout(function () {
+                x.style.backgroundColor = "white";
+            }, 6000)
+            setTimeout(function () {
+                x.style.backgroundColor = "black";
+            }, 7000)
+        }
+    </script>
+</body>
+
+</html>

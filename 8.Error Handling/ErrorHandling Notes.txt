@@ -1,0 +1,7 @@
+
+In Javascript , try and catch are keywords used to implement error handling.
+
+Error handling is essential when writing code to gracefully handle unexpected errors and exeptions that may occur during program execution.
+
+The try and catch blocks work together to enable developers to catch and handle errors,
+preventing them from crashing the entire application.

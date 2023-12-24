@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .display {
+            display: block;
+        }
+
+        li {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <li class="" id="list">Name : Pratik Balasaheb Bhujbal</li>
+    <button onclick="change(list,btn)" id="btn">Show-details</button>
+
+    <script>
+        const change = (x, y) => {
+            // x.classList.add("background");
+            // x.classList.remove("text-color");
+            x.classList.toggle("display");
+            if (y.innerHTML == "Show-details") {
+                y.innerHTML = "Hide-details";
+            }
+            else {
+                y.innerHTML = "Show-details";
+            }
+        }
+    </script>
+</body>
+
+</html>

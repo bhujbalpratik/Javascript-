@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" onsubmit="return check(PASS);">
+        <input type="text" name="" id="USRNM" placeholder="Enter Your Username">
+        <br><br>
+        <input type="password" name="" id="PASS" placeholder="Enter Your Password">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        const check = (p) => {
+            var pass = p.value;
+            if (pass.length <= 5) {
+                return true;
+            }
+            else {
+                alert("Password Must be contain less than 5 charachters");
+                p.value = "";
+                p.style.border = "2px solid red";
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

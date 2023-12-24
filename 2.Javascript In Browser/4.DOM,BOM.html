@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Window Object</title>
+  </head>
+  <body>
+    <!-- 
+        Window Object 
+            1)DOM
+                ->Document Object Model(DOM).
+                ->DOM represents The page content as HTML.
+                ->document.body -> Page body as JS object.
+
+            2)BOM 
+                ->Browser Object Model(BOM).
+                ->BOM represents Additional Objects provided by the    browser for working with everything except the documnent.
+                -> The function alert,confirm,prompt are also a part of BOM
+    -->
+
+    <script>
+      window.console.log(window);
+      console.log(document.body);
+
+      //   We can change Styles by using Javascript
+      document.body.style.background = "yellow";
+    </script>
+  </body>
+</html>

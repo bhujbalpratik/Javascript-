@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Checkbox Selection Demo</title>
+</head>
+
+<body>
+    <h1>What are your interests?</h1>
+
+    <form>
+        <label>
+            <input type="checkbox" name="interest" value="sports" onclick="AddInterests()"> Sports
+        </label><br>
+        <label>
+            <input type="checkbox" name="interest" value="music" onclick="AddInterests()"> Music
+        </label><br>
+        <label>
+            <input type="checkbox" name="interest" value="dance" onclick="AddInterests()"> Dance
+        </label><br>
+    </form>
+
+    <p>You have selected:</p>
+    <ul id="Selected"></ul>
+
+    <script>
+        function AddInterests() {
+            const checkboxes = document.querySelectorAll('input');
+            const Selected = document.getElementById('Selected');
+            const selectedOpt = [];
+
+            for (let i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].checked) {
+                    selectedOpt.push(checkboxes[i].value);
+                }
+            }
+
+            Selected.innerHTML = '';
+            for (let i = 0; i < selectedOpt.length; i++) {
+                const li = document.createElement('li');
+                li.textContent = selectedOpt[i];
+                Selected.appendChild(li);
+            }
+        }
+    </script>
+</body>
+
+</html>
